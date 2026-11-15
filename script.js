@@ -28,7 +28,7 @@ var puntos = [
         estado: "Hipotesis",
         coordenadas: [67.85, 20.22],
         icono: "🧲",
-        imagen: "Kiruna.jpeg",
+        imagen: "kiruna.jpeg",
         estadisticas: {
         	terreno: 70,
         	termal: 55,
@@ -95,7 +95,7 @@ var puntos = [
         estado: "Hipotesis",
         coordenadas: [43.50, 56.50],
         icono: "💎",
-        imagen: "Ustyurt.jpeg",
+        imagen: "ustyurt.jpeg",
         estadisticas: {
         	terreno: 75,
         	termal: 60,
