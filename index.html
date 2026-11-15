@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Atlas de Análogos</title>
+	<!-- Leaflet -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body> <!-- The data groups were mostly SI-Generated (as in "data-i18n" and "data-grupo", being used only for the translations. -->
+
+	<header>
+		<div class="header-texto">
+			<h1 data-i18n="atlas"> Atlas de Análogos</h1>
+			<p data-i18n="descripcion">Explorador Geografico Interactivo para Analogos de la Luna y Marte en la Tierra</p>
+			<button id="btnIdioma">English</button>
+		</div>
+
+		<img src="logo.png" alt="Logo del Atlas" class="header-logo">
+	</header>
+
+	<main>
+		
+		<aside id="panel">
+			<h2 data-i18n="categorias">Categorías</h2>
+
+			<label>
+			    <input type="checkbox" class="filtro"
+			    data-grupo="mundo" value="Luna" checked>
+			    <span data-i18n="luna">Luna</span>
+			</label>
+
+			<label>
+			    <input type="checkbox" class="filtro"
+			    data-grupo="mundo" value="Marte" checked>
+			    <span data-i18n="marte">Marte</span>
+			</label>
+
+			<hr>
+
+			<h3 data-i18n="estado">Estado de información</h3>
+
+			<label>
+			    <input type="checkbox" class="filtro"
+			    data-grupo="estado" value="Conocido" checked>
+			    <span data-i18n="conocido">Conocido</span>
+			</label>
+
+			<label>
+			    <input type="checkbox" class="filtro"
+			    data-grupo="estado" value="Hipotesis" checked>
+			    <span data-i18n="hipotesis">Hipótesis</span>
+			</label>
+			<hr>
+
+			<h3>Info</h3>
+			<p data-i18n="info">Selecciona un marcador para consultar sus datos.</p>
+		</aside>
+
+		<section id="contenedor-mapa">
+			<div id="mapa"></div>
+		</section>
+	</main>
+	<!-- Leaflet -->
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+	<!-- JS -->
+	<script src="script.js"></script>
+</body>
+</html>
