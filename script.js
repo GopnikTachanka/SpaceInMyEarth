@@ -28,7 +28,7 @@ var puntos = [
         estado: "Hipotesis",
         coordenadas: [67.85, 20.22],
         icono: "🧲",
-        imagen: "kiruna.jpeg",
+        imagen: "kiruna.jpg",
         estadisticas: {
         	terreno: 70,
         	termal: 55,
